@@ -1,0 +1,83 @@
+/* MovieList.css */
+.movie-list-background {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative; /* Position relative to contain the absolutely positioned elements */
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Search bar container positioned at the top right corner */
+  .search-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    z-index: 1; /* Ensure the search bar is above the background */
+  }
+  
+  /* Search input styles */
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #7ec6e2;
+    border-radius: 14px;
+    width: 250px;
+    background-color: white;
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  
+  /* Hover effect for the search input */
+  .search-input:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+  }
+  
+  /* Search button styles */
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  /* Hover effect for the search button */
+  .search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .movie-card {
+    text-align: center;
+  }
+  
+  .movie-poster {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .movie-title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
